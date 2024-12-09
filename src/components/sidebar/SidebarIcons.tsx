@@ -12,7 +12,7 @@ const SidebarIcons: React.FC = () => {
   };
 
   return (
-    <section className="h-screen min-w-16 w-16 max-w-16 border-r-2 bg-overlay-background border-r-base-border flex flex-col justify-between py-3 items-center transition-effect">
+    <section className="h-screen min-w-16 w-16 max-w-16 border-r-2 bg-overlay-background border-r-base-border flex flex-col justify-between py-4 items-center transition-effect">
       <section className="flex flex-col items-center gap-5">
         <SidebarHeaderIcon />
         <div className="flex flex-col gap-3">
