@@ -1,7 +1,6 @@
 // Import Section
-import Sidebar from "./sidebar/Sidebar";
-import SidebarIcons from "./sidebar/SidebarIcons";
+import SidebarTransition from "./sidebar/SidebarTransition";
 import Header from "./header/Header";
 
 // Export Section
-export { Sidebar, SidebarIcons, Header };
+export { SidebarTransition, Header };

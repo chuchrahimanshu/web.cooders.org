@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
-import { Header, Sidebar, SidebarIcons } from "../components";
+import { Header, SidebarTransition } from "../components";
 
 const StructuralLayout: React.FC = () => {
   const [sidebarToggle, setSidebarToggle] = useState<boolean>(false);
@@ -10,7 +10,7 @@ const StructuralLayout: React.FC = () => {
   };
   return (
     <main className="h-screen overflow-hidden w-full bg-base-background text-base-text scrollbar-none flex">
-      {sidebarToggle ? <Sidebar /> : <SidebarIcons />}
+      <SidebarTransition sidebarToggle={sidebarToggle} />
       <section className="w-full">
         <Header handleSidebarToggle={handleSidebarToggle} />
         <Outlet />
