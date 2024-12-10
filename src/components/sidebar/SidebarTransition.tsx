@@ -2,10 +2,6 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import SidebarIcons from "./SidebarIcons";
 
-interface SidebarTransitionProps {
-  sidebarToggle: boolean;
-}
-
 const SidebarTransition: React.FC<SidebarTransitionProps> = ({
   sidebarToggle,
 }) => {

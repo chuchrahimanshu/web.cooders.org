@@ -3,11 +3,6 @@ import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 import HeaderIcon from "./HeaderIcon";
 import { FaWandMagicSparkles } from "react-icons/fa6";
 
-interface HeaderProps {
-  handleSidebarToggle: () => void;
-  sidebarToggle: boolean;
-}
-
 const Header: React.FC<HeaderProps> = ({
   handleSidebarToggle,
   sidebarToggle,

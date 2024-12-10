@@ -1,11 +1,4 @@
 import React from "react";
-import { IconType } from "react-icons";
-
-interface HeaderIconProps {
-  Icon: IconType;
-  size: string;
-  handleIconClick?: () => void;
-}
 
 const HeaderIcon: React.FC<HeaderIconProps> = ({
   Icon,

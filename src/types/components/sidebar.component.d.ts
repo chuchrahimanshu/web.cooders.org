@@ -1,0 +1,3 @@
+interface SidebarTransitionProps {
+  sidebarToggle: boolean;
+}

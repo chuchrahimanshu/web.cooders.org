@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { StructuralLayout } from "../layouts";
 import { Home } from "../pages";
 import ERDiagram from "../pages/tools/ERDiagram";
+
 const Router: React.FC = () => {
   return (
     <BrowserRouter>
@@ -15,4 +16,5 @@ const Router: React.FC = () => {
     </BrowserRouter>
   );
 };
+
 export default Router;
