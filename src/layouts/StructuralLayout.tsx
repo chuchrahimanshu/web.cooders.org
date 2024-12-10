@@ -9,9 +9,12 @@ const StructuralLayout: React.FC = () => {
     setSidebarToggle((prev) => !prev);
   };
   return (
-    <main className="h-screen overflow-hidden w-full bg-base-background text-base-text scrollbar-none flex">
+    <main className="h-screen overflow-hidden w-screen bg-base-background text-base-text scrollbar-none flex">
       <SidebarTransition sidebarToggle={sidebarToggle} />
-      <section className="w-full">
+      <section
+        className={`${
+          sidebarToggle ? "w-[calc(100vw-240px)]" : "w-[calc(100vw-64px)]"
+        }`}>
         <Header
           handleSidebarToggle={handleSidebarToggle}
           sidebarToggle={sidebarToggle}

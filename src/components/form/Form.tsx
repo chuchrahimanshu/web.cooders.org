@@ -16,26 +16,28 @@ const Form: React.FC<FormPropsInterface> = ({
   handleSkipClicked,
 }) => {
   return (
-    <form
-      className="bg-overlay-background py-5 px-6 rounded-2xl flex flex-col md:gap-4 shadow-sm w-full md:w-auto my-2 xs:mx-16 mx-8"
-      id={id}
-      onSubmit={handleFormSubmit}>
-      {showSkip && handleSkipClicked ? (
-        <section className="flex items-center justify-between mb-4">
-          <h1 className="text-[22px] text-base-text font-semibold">
+    <section className="h-[calc(100vh-70px)] flex items-center justify-center">
+      <form
+        className="bg-overlay-background py-5 px-6 rounded-md flex flex-col md:gap-4 shadow-sm w-full md:w-auto my-2 xs:mx-16 mx-8"
+        id={id}
+        onSubmit={handleFormSubmit}>
+        {showSkip && handleSkipClicked ? (
+          <section className="flex items-center justify-between mb-4">
+            <h1 className="text-[22px] text-base-text font-semibold">
+              {heading}
+            </h1>
+            <SkipButton handleSkipClicked={handleSkipClicked} />
+          </section>
+        ) : (
+          <h1 className="text-[22px] text-base-text font-semibold mb-2">
             {heading}
           </h1>
-          <SkipButton handleSkipClicked={handleSkipClicked} />
-        </section>
-      ) : (
-        <h1 className="text-[22px] text-base-text font-semibold mb-2">
-          {heading}
-        </h1>
-      )}
-      {children}
-      <Button disabled={formDisabled} title={buttonTitle} type={buttonType} />
-      {showSocial && <Social />}
-    </form>
+        )}
+        {children}
+        <Button disabled={formDisabled} title={buttonTitle} type={buttonType} />
+        {showSocial && <Social />}
+      </form>
+    </section>
   );
 };
 

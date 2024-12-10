@@ -1,8 +1,17 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { StructuralLayout } from "../layouts";
-import { Home } from "../pages";
-import ERDiagram from "../pages/tools/ERDiagram";
+import {
+  Authenticate,
+  ChangePassword,
+  EmailVerification,
+  ERDiagram,
+  ForgetPassword,
+  Home,
+  SignIn,
+  SignUp,
+  TwoFactorAuthentication,
+} from "../pages";
 
 const Router: React.FC = () => {
   return (
@@ -11,6 +20,25 @@ const Router: React.FC = () => {
         <Route path="/" element={<StructuralLayout />}>
           <Route path="" element={<Home />} />
           <Route path="tools/er-diagram" element={<ERDiagram />} />
+          <Route path="accounts" element={<Authenticate />} />
+          <Route path="accounts/signup" element={<SignUp />} />
+          <Route path="accounts/signin" element={<SignIn />} />
+          <Route
+            path="accounts/validates/password"
+            element={<ForgetPassword />}
+          />
+          <Route
+            path="accounts/validates/email"
+            element={<EmailVerification />}
+          />
+          <Route
+            path="accounts/validates/otp"
+            element={<TwoFactorAuthentication />}
+          />
+          <Route
+            path="accounts/updates/password"
+            element={<ChangePassword />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
