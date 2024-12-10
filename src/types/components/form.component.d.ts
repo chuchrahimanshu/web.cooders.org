@@ -69,12 +69,12 @@ interface ButtonPropsInterface {
   disabled: boolean;
 }
 
-interface OTPInputPropsInterface {
-  setFormData: React.Dispatch<React.SetStateAction<OTPTokenStateInterface>>;
-  title: string;
-  id: string;
-  form: string;
-}
+// interface OTPInputPropsInterface {
+//   setFormData: React.Dispatch<React.SetStateAction<OTPTokenStateInterface>>;
+//   title: string;
+//   id: string;
+//   form: string;
+// }
 
 interface EmailOTPInputPropsInterface {
   setFormData: React.Dispatch<
