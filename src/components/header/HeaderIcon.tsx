@@ -7,7 +7,7 @@ const HeaderIcon: React.FC<HeaderIconProps> = ({
 }) => {
   return (
     <Icon
-      className={`${size} p-2 hover:bg-base-border rounded-[5px] cursor-pointer`}
+      className={`${size} p-2 bg-base-border opacity-75 hover:opacity-100 rounded-[5px] cursor-pointer hover:shadow-`}
       onClick={handleIconClick}
     />
   );

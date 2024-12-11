@@ -1,5 +1,5 @@
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
-import { FcAdvertising, FcGlobe, FcSynchronize, FcWorkflow } from "react-icons/fc";
+import { FcAdvertising, FcCollaboration, FcGlobe, FcSynchronize, FcWorkflow } from "react-icons/fc";
 import { LuComputer } from "react-icons/lu";
 
 export const SidebarHeaderStructure = {
@@ -47,6 +47,13 @@ export const SidebarBodyStructure = [
         title: "Interactions",
         link: "/community/interactions",
         icon: FcAdvertising,
+        iconSize: 21,
+      },
+      {
+        id: "2.2",
+        title: "Messaging",
+        link: "/community/messaging",
+        icon: FcCollaboration,
         iconSize: 21,
       }
     ]

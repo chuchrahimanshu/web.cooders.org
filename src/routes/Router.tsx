@@ -8,6 +8,7 @@ import {
   ERDiagram,
   ForgetPassword,
   Home,
+  Messaging,
   SignIn,
   SignUp,
   TwoFactorAuthentication,
@@ -19,7 +20,7 @@ const Router: React.FC = () => {
       <Routes>
         <Route path="/" element={<StructuralLayout />}>
           <Route path="" element={<Home />} />
-          <Route path="converters/er-diagram" element={<ERDiagram />} />
+          <Route path="converter/er-diagram" element={<ERDiagram />} />
           <Route path="accounts" element={<Authenticate />} />
           <Route path="accounts/signup" element={<SignUp />} />
           <Route path="accounts/signin" element={<SignIn />} />
@@ -39,6 +40,7 @@ const Router: React.FC = () => {
             path="accounts/updates/password"
             element={<ChangePassword />}
           />
+          <Route path="community/messaging" element={<Messaging />} />
         </Route>
       </Routes>
     </BrowserRouter>
