@@ -3,7 +3,7 @@ import { MessagingBar, MessagingChat } from '../../components'
 
 const Messaging: React.FC = () => {
   return (
-    <section className='flex h-full w-full '>
+    <section className='flex h-full w-full bg-overlay-background'>
         <MessagingBar />
         <MessagingChat />
     </section>

@@ -13,7 +13,7 @@ const SidebarBody: React.FC<SidebarBodyProps> = ({ sidebarGroupToggle, handleSid
     <section className="my-2 transition-effect">
       {SidebarBodyStructure.map((group, index) => (
         <React.Fragment key={index}>
-          <div className="flex items-center justify-between px-4 pt-[14px] pb-[15px] mt-1 hover:bg-base-border transition-effect cursor-pointer" onClick={handleSidebarGroupClick.bind(this, group.id)}>
+          <div className="flex items-center justify-between px-4 pt-[14px] pb-[15px] hover:bg-base-border transition-effect cursor-pointer" onClick={handleSidebarGroupClick.bind(this, group.id)}>
             <div className="flex items-center gap-2">
               <group.icon size={group.iconSize} />
               <p className="text-[17px] -mt-[0.5px]">{group.title}</p>
@@ -22,7 +22,7 @@ const SidebarBody: React.FC<SidebarBodyProps> = ({ sidebarGroupToggle, handleSid
           </div>
           {sidebarGroupToggle === group.id && group.items && group.items.map((item, index) => (
             <div
-              className="pl-6 flex items-center gap-3 pr-4 pt-[14px] pb-[15px] mt-1 hover:bg-base-border transition-effect cursor-pointer"
+              className="pl-6 flex items-center gap-3 pr-4 pt-[14px] pb-[15px] hover:bg-base-border transition-effect cursor-pointer"
               key={index}
               onClick={handleSidebarBodyItemClick.bind(this, item.link)}>
               <item.icon size={item.iconSize} />
