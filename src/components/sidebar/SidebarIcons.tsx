@@ -4,7 +4,7 @@ import SidebarHeaderIcon from "./SidebarHeaderIcon";
 import SidebarFooterAvatar from "./SidebarFooterAvatar";
 import { NavigateFunction, useNavigate } from "react-router-dom";
 
-const SidebarIcons: React.FC = () => {
+const SidebarIcons: React.FC<SidebarIconProps> = ({ sidebarGroupToggle, handleSidebarGroupClick }) => {
   const navigate: NavigateFunction = useNavigate();
 
   const handleBodyItemClick = (link: string) => {
@@ -18,9 +18,15 @@ const SidebarIcons: React.FC = () => {
         <div className="flex flex-col gap-3">
           {SidebarBodyStructure.map((group, index) => (
             <React.Fragment key={index}>
-              {group.items.map((item, index) => (
+              <group.icon
+                  size={group.iconSize}
+                  key={index}
+                  className="cursor-pointer"
+                  onClick={handleSidebarGroupClick.bind(this, group.id)}
+                />
+              {sidebarGroupToggle === group.id && group.items && group.items.map((item, index) => (
                 <item.icon
-                  size={20}
+                  size={item.iconSize}
                   key={index}
                   className="cursor-pointer"
                   onClick={handleBodyItemClick.bind(this, item.link)}

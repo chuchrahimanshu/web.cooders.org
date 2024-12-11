@@ -1,4 +1,5 @@
-import { FaDiagramNext } from "react-icons/fa6";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
+import { FcAdvertising, FcGlobe, FcSynchronize, FcWorkflow } from "react-icons/fc";
 import { LuComputer } from "react-icons/lu";
 
 export const SidebarHeaderStructure = {
@@ -17,13 +18,37 @@ export const SidebarFooterStructure = {
 
 export const SidebarBodyStructure = [
   {
-    heading: "Tools",
+    id: "1",
+    title: "Converters",
+    icon: FcSynchronize,
+    open: FaAngleDown,
+    close: FaAngleUp,
+    iconSize: 22,
     items: [
       {
+        id: "1.1",
         title: "ER Diagram",
-        link: "/tools/er-diagram",
-        icon: FaDiagramNext,
+        link: "/converters/er-diagram",
+        icon: FcWorkflow,
+        iconSize: 21,
       },
     ],
   },
+  {
+    id: "2",
+    title: "Community",
+    icon: FcGlobe,
+    open: FaAngleDown,
+    close: FaAngleUp,
+    iconSize: 22,
+    items: [
+      {
+        id: "2.1",
+        title: "Interactions",
+        link: "/community/interactions",
+        icon: FcAdvertising,
+        iconSize: 21,
+      }
+    ]
+  }
 ];
