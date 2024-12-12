@@ -5,7 +5,7 @@ const SkipButton: React.FC<SkipButtonPropsInterface> = ({
 }) => {
   return (
     <button
-      className="bg-transparent border-[2px] border-action-button text-action-button hover:bg-action-button hover:text-base-text rounded-full font-semibold text-sm h-[28px] w-[50px] flex items-center justify-center"
+      className="bg-transparent border-[2px] border-action-button text-action-button hover:bg-action-button hover:text-base-text rounded-full font-semibold text-sm h-[28px] w-[50px] flex items-center justify-center transition-all ease-in-out duration-200"
       onClick={handleSkipClicked}
       type="button">
       <span className="mb-[1px]">Skip</span>

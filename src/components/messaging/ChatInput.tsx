@@ -2,7 +2,7 @@ import React from 'react'
 
 const ChatInput: React.FC = () => {
   return (
-    <div className='bg-slate-600 h-56'></div>
+    <div className='h-56'></div>
   )
 }
 

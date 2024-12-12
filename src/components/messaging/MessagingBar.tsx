@@ -1,13 +1,13 @@
 import React from 'react'
 import BarHeader from './BarHeader'
-import BarSearch from './BarSearch'
+import BarMenu from './BarMenu'
 import BarUsers from './BarUsers'
 
 const MessagingBar: React.FC = () => {
   return (
-    <section className='w-[400px]'>
+    <section className='w-[400px] border-r border-r-base-border'>
         <BarHeader />
-        <BarSearch />
+        <BarMenu />
         <BarUsers />  
     </section>
   )

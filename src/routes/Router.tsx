@@ -20,7 +20,7 @@ const Router: React.FC = () => {
       <Routes>
         <Route path="/" element={<StructuralLayout />}>
           <Route path="" element={<Home />} />
-          <Route path="converter/er-diagram" element={<ERDiagram />} />
+          <Route path="converters/er-diagram" element={<ERDiagram />} />
           <Route path="accounts" element={<Authenticate />} />
           <Route path="accounts/signup" element={<SignUp />} />
           <Route path="accounts/signin" element={<SignIn />} />

@@ -2,7 +2,7 @@ import React from 'react'
 
 const ChatHeader: React.FC = () => {
   return (
-    <div className='h-[75px] bg-orange-500'></div>
+    <div className='h-[75px] border-b border-b-base-border'></div>
   )
 }
 

@@ -5,7 +5,7 @@ import Chat from './Chat'
 
 const MessagingChat: React.FC = () => {
   return (
-    <section className='w-full bg-red-400 flex flex-col justify-between'>
+    <section className='w-full flex flex-col justify-between'>
         <div className='h-full'>
             <ChatHeader />
             <Chat />
