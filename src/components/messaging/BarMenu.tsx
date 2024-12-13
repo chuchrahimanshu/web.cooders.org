@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import { BiSolidConversation } from "react-icons/bi";
+import { FaBell } from "react-icons/fa";
+import { FaUserGroup } from "react-icons/fa6";
 import {
   FcBusinessContact,
   FcConferenceCall,
   FcSettings,
   FcVoicePresentation,
 } from "react-icons/fc";
+import { IoSettingsSharp } from "react-icons/io5";
 
 const BarMenu: React.FC = () => {
   const [selectedMenuItem, setSelectedMenuItem] = useState(1);
@@ -12,25 +16,25 @@ const BarMenu: React.FC = () => {
   const menu = [
     {
       id: 1,
-      icon: FcVoicePresentation,
+      icon: BiSolidConversation,
       text: "Messages",
-      iconSize: 27,
+      iconSize: 25,
     },
     {
       id: 2,
-      icon: FcBusinessContact,
+      icon: FaUserGroup,
       text: "Users",
-      iconSize: 26,
+      iconSize: 25,
     },
     {
       id: 3,
-      icon: FcConferenceCall,
-      text: "Groups",
-      iconSize: 27,
+      icon: FaBell,
+      text: "Notifications",
+      iconSize: 22,
     },
     {
       id: 4,
-      icon: FcSettings,
+      icon: IoSettingsSharp,
       text: "Settings",
       iconSize: 24,
     },
@@ -50,7 +54,7 @@ const BarMenu: React.FC = () => {
               selectedMenuItem === item.id && "bg-base-border"
             }`}
             onClick={handleMenuItemClick.bind(this, item.id)}>
-            <item.icon size={item.iconSize} className="-mt-[6px]" />
+            <item.icon size={item.iconSize} className={selectedMenuItem === item.id ? "opacity-90" : "opacity-70"} />
           </div>
         ))}
     </section>

@@ -1,12 +1,8 @@
-import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
-import {
-  FcAdvertising,
-  FcCollaboration,
-  FcGlobe,
-  FcSynchronize,
-  FcWorkflow,
-} from "react-icons/fc";
+import { AiOutlineCluster } from "react-icons/ai";
+import { FaGlobe, FaHandsHelping } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp, FaSignalMessenger } from "react-icons/fa6";
 import { LuComputer } from "react-icons/lu";
+import { TbReplaceFilled } from "react-icons/tb";
 
 export const SidebarHeaderStructure = {
   title: "cooders.org",
@@ -26,100 +22,41 @@ export const SidebarBodyStructure = [
   {
     id: "1",
     title: "Converters",
-    icon: FcSynchronize,
+    icon: TbReplaceFilled,
     open: FaAngleDown,
     close: FaAngleUp,
-    iconSize: 22,
+    iconSize: 24,
     items: [
       {
         id: "1.1",
         title: "ER Diagram",
         link: "/converters/er-diagram",
-        icon: FcWorkflow,
-        iconSize: 21,
+        icon: AiOutlineCluster,
+        iconSize: 27,
       },
     ],
   },
   {
     id: "2",
     title: "Community",
-    icon: FcGlobe,
+    icon: FaHandsHelping,
     open: FaAngleDown,
     close: FaAngleUp,
-    iconSize: 22,
+    iconSize: 24,
     items: [
       {
         id: "2.1",
         title: "Interactions",
         link: "/community/interactions",
-        icon: FcAdvertising,
-        iconSize: 21,
+        icon: FaGlobe,
+        iconSize: 23,
       },
       {
         id: "2.2",
         title: "Messaging",
         link: "/community/messaging",
-        icon: FcCollaboration,
-        iconSize: 21,
-      },
-    ],
-  },
-  {
-    id: "3",
-    title: "Accounts",
-    icon: FcAdvertising,
-    open: FaAngleDown,
-    close: FaAngleUp,
-    iconSize: 22,
-    items: [
-      {
-        id: "3.1",
-        title: "Authenticate",
-        link: "/accounts",
-        icon: FcAdvertising,
-        iconSize: 21,
-      },
-      {
-        id: "3.2",
-        title: "Sign Up",
-        link: "/accounts/signup",
-        icon: FcAdvertising,
-        iconSize: 21,
-      },
-      {
-        id: "3.3",
-        title: "Sign In",
-        link: "/accounts/signin",
-        icon: FcAdvertising,
-        iconSize: 21,
-      },
-      {
-        id: "3.4",
-        title: "Email Verification",
-        link: "/accounts/validates/email",
-        icon: FcAdvertising,
-        iconSize: 21,
-      },
-      {
-        id: "3.5",
-        title: "Change Password",
-        link: "/accounts/updates/password",
-        icon: FcAdvertising,
-        iconSize: 21,
-      },
-      {
-        id: "3.6",
-        title: "Forget Password",
-        link: "/accounts/validates/password",
-        icon: FcAdvertising,
-        iconSize: 21,
-      },
-      {
-        id: "3.7",
-        title: "TFA",
-        link: "/accounts/validates/otp",
-        icon: FcAdvertising,
-        iconSize: 21,
+        icon: FaSignalMessenger,
+        iconSize: 23,
       },
     ],
   },

@@ -17,29 +17,31 @@ const SidebarBody: React.FC<SidebarBodyProps> = ({
       {SidebarBodyStructure.map((group, index) => (
         <React.Fragment key={index}>
           <div
-            className="flex items-center justify-between px-4 pt-[14px] pb-[15px] hover:bg-base-border transition-effect cursor-pointer"
-            onClick={handleSidebarGroupClick.bind(this, group.id)}>
-            <div className="flex items-center gap-2">
+            className="flex w-full opacity-75 hover:opacity-95 items-center px-4 pt-[14px] pb-[15px] hover:bg-base-border transition-effect cursor-pointer"
+            onClick={handleSidebarGroupClick.bind(this, group.id)}> 
+            <div className="w-[20%] flex items-center justify-start">
               <group.icon size={group.iconSize} />
-              <p className="text-[17px] -mt-[0.5px]">{group.title}</p>
             </div>
+            <p className="text-[17px] -mt-[2px] w-[70%]">{group.title}</p>
             {group.items &&
               group.items.length > 0 &&
               (sidebarGroupToggle === group.id ? (
-                <group.close size={15} />
+                <group.close size={15} className="w-[10%]" />
               ) : (
-                <group.open size={15} />
+                <group.open size={15} className="w-[10%]" />
               ))}
           </div>
           {sidebarGroupToggle === group.id &&
             group.items &&
             group.items.map((item, index) => (
               <div
-                className="pl-6 flex items-center gap-3 pr-4 pt-[14px] pb-[15px] hover:bg-base-border transition-effect cursor-pointer"
+                className="flex items-center opacity-75 hover:opacity-95 gap-3 px-4 pt-[14px] pb-[15px] hover:bg-base-border transition-effect cursor-pointer"
                 key={index}
                 onClick={handleSidebarBodyItemClick.bind(this, item.link)}>
-                <item.icon size={item.iconSize} />
-                <p className="text-base">{item.title}</p>
+                <div className="w-[16%] flex items-center justify-start">
+                  <item.icon size={item.iconSize} />
+                </div>
+                <p className="text-[17px] w-[84%] -mt-[2px]">{item.title}</p>
               </div>
             ))}
         </React.Fragment>
