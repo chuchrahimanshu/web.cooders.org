@@ -2,12 +2,6 @@ import React, { useState } from "react";
 import { BiSolidConversation } from "react-icons/bi";
 import { FaBell } from "react-icons/fa";
 import { FaUserGroup } from "react-icons/fa6";
-import {
-  FcBusinessContact,
-  FcConferenceCall,
-  FcSettings,
-  FcVoicePresentation,
-} from "react-icons/fc";
 import { IoSettingsSharp } from "react-icons/io5";
 
 const BarMenu: React.FC = () => {
