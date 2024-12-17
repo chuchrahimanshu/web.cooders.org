@@ -9,14 +9,13 @@ const SidebarTransition: React.FC<SidebarTransitionProps> = ({
 
   const handleSidebarGroupClick = (id: string) => {
     setSidebarGroupToggle((prevId) => {
-      if(prevId === id){
+      if (prevId === id) {
         return "0";
       } else {
         return id;
       }
-    })
-  }
-
+    });
+  };
 
   return (
     <div
@@ -29,7 +28,10 @@ const SidebarTransition: React.FC<SidebarTransitionProps> = ({
             ? "opacity-100 min-w-60 w-60 max-w-60"
             : "opacity-0 pointer-events-none"
         }`}>
-        <Sidebar sidebarGroupToggle={sidebarGroupToggle} handleSidebarGroupClick={handleSidebarGroupClick} />
+        <Sidebar
+          sidebarGroupToggle={sidebarGroupToggle}
+          handleSidebarGroupClick={handleSidebarGroupClick}
+        />
       </div>
       <div
         className={`absolute inset-0 transition-opacity duration-300 ease-in-out ${
@@ -37,7 +39,10 @@ const SidebarTransition: React.FC<SidebarTransitionProps> = ({
             ? "opacity-0 pointer-events-none"
             : "opacity-100 min-w-16 w-16 max-w-16"
         }`}>
-        <SidebarIcons sidebarGroupToggle={sidebarGroupToggle} handleSidebarGroupClick={handleSidebarGroupClick} />
+        <SidebarIcons
+          sidebarGroupToggle={sidebarGroupToggle}
+          handleSidebarGroupClick={handleSidebarGroupClick}
+        />
       </div>
     </div>
   );
