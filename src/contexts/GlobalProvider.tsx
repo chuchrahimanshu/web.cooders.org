@@ -1,4 +1,9 @@
-import React, { createContext, useState, type ReactNode } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  type ReactNode,
+} from "react";
 import { UI_STUDIOS } from "../data";
 
 interface ContextInterface {
@@ -8,7 +13,9 @@ interface ContextInterface {
 
 const GlobalContext = createContext<ContextInterface | undefined>(undefined);
 
-const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+export const GlobalProvider: React.FC<{ children: ReactNode }> = ({
+  children,
+}) => {
   const [selectedStudio, setSelectedStudio] = useState<UIStudiosDataInterface>(
     UI_STUDIOS[0]
   );
@@ -30,4 +37,9 @@ const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   );
 };
 
-export default GlobalProvider;
+export const useGlobalContext = () => {
+  const context = useContext(GlobalContext);
+  if (!context)
+    throw new Error("useGlobalContext must be used within a GlobalProvider");
+  return context;
+};

@@ -1,8 +1,13 @@
 import React from "react";
 import { Router } from "./routes";
+import { GlobalProvider } from "./contexts";
 
 const App: React.FC = () => {
-  return <Router />;
+  return (
+    <GlobalProvider>
+      <Router />
+    </GlobalProvider>
+  );
 };
 
 export default App;

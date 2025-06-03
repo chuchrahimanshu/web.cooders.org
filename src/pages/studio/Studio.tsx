@@ -1,7 +1,8 @@
 import React from "react";
+import MUIStudio from "./MUIStudio";
 
 const Studio: React.FC = () => {
-  return <div>Studio</div>;
+  return <MUIStudio />;
 };
 
 export default Studio;
