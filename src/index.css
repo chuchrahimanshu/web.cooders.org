@@ -3,3 +3,13 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
+.hide-scrollbar {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
