@@ -8,7 +8,7 @@ const MUIStudioSidebar: React.FC = () => {
   return (
     <Box
       component="aside"
-      className="h-[calc(100vh-65px)] w-[240px] flex flex-row items-stretch bg-background"
+      className="h-[calc(100vh-65px)] w-[230px] flex flex-row items-stretch bg-background"
     >
       <Box
         className="w-full h-full"

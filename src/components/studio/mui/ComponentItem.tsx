@@ -30,7 +30,7 @@ const ComponentItem: React.FC<ComponentItemPropsInterface> = ({
       sx={{ backgroundColor }}
     >
       {compItem.icon && (
-        <Box sx={{ width: "20%", textAlign: "left" }}>
+        <Box sx={{ width: "18%", textAlign: "left" }}>
           <compItem.icon sx={{ fontSize: 18, fontWeight: 600, opacity }} />
         </Box>
       )}

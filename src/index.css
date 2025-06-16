@@ -13,3 +13,21 @@
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes rotateBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.user-logo {
+  transition: border-color 0.3s ease-in-out;
+}
+
+.user-logo:hover {
+  border-color: #007fff;
+  animation: rotateBorder 0.5s linear;
+}
