@@ -24,7 +24,7 @@ const TextLabelInput: React.FC<TextLabelInputPropsInterface> = ({
         name={name}
         value={value}
         onChange={handleInputChange}
-        className="ease-in-out outline-none border-2 border-secondary-overlay bg-secondary-overlay p-2 focus:border-palatte-yellow duration-300"
+        className="ease-in-out outline-none border-2 border-secondary-overlay bg-secondary-overlay p-2 focus:border-palette-yellow duration-300"
       />
     </div>
   );
