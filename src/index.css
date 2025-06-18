@@ -6,7 +6,11 @@
 
 @theme {
   --color-primary-background: #101010;
+  --color-primary-overlay: #181818;
+  --color-secondary-overlay: #141414;
   --color-primary-text: #ffffff;
+  --color-palatte-yellow: #ffd230;
+  --color-primary-divider: #202020;
 }
 
 .hide-scrollbar {

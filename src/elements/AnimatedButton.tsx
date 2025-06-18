@@ -9,7 +9,7 @@ const AnimatedButton: React.FC<AnimatedButtonPropsInterface> = ({
     <div className={`text-center ${classNames}`} onClick={handleButtonClick}>
       <button className="relative z-10 px-[10px] py-[6px] font-bold uppercase text-primary transition-colors duration-500 border-2 border-primary rounded-none overflow-hidden group hover:text-white cursor-pointer">
         <span className="relative z-20 text-[16px]">{content}</span>
-        <span className="absolute inset-0 bg-amber-300 rounded-none z-[-1]"></span>
+        <span className="absolute inset-0 bg-palatte-yellow rounded-none z-[-1]"></span>
         <span className="absolute inset-0 flex items-center justify-center h-full filter-[url(#goo)]">
           <span className="absolute top-[2px] left-0 w-[25%] h-full bg-zinc-900 rounded-none transform translate-y-[150%] scale-[1.7] transition-transform duration-450 group-hover:translate-y-0 group-hover:scale-[1.4] delay-0"></span>
           <span className="absolute top-[2px] left-[30%] w-[25%] h-full bg-zinc-900 rounded-none transform translate-y-[150%] scale-[1.7] transition-transform duration-450 group-hover:translate-y-0 group-hover:scale-[1.4] delay-75"></span>

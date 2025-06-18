@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   const navigate: NavigateFunction = useNavigate();
 
   const handleButtonClick = () => {
-    navigate("/signin");
+    navigate("/signup");
   };
 
   return (
