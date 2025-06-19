@@ -20,11 +20,13 @@ const AuthContainer: React.FC<AuthContainerPropsInterface> = ({
       />
       <form
         onClick={(e) => e.stopPropagation()}
-        className="p-8 bg-primary-overlay flex flex-col gap-[8px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px]"
+        className="shadow-2xl p-8 bg-primary-overlay flex flex-col gap-[9px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px]"
       >
-        <p className="text-3xl font-bold mb-[12px] hover:text-palette-yellow duration-300 ease-in-out inline-block">
-          {heading}
-        </p>
+        <div className="flex items-center justify-between">
+          <p className="text-3xl font-bold mb-[12px] hover:text-palette-yellow duration-300 ease-in-out inline-block">
+            {heading}
+          </p>
+        </div>
         {children}
       </form>
     </section>
