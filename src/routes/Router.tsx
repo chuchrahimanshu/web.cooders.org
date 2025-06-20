@@ -1,7 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { GlobalLayout } from "../layouts";
-import { ForgetPassword, Home, SignIn, SignUp, Studio } from "../pages";
+import {
+  ChangePassword,
+  ForgetPassword,
+  Home,
+  SignIn,
+  SignUp,
+  Studio,
+  VerifyOTP,
+} from "../pages";
 
 const Router: React.FC = () => {
   return (
@@ -13,6 +21,8 @@ const Router: React.FC = () => {
           <Route path="signup" Component={SignUp} />
           <Route path="signin" Component={SignIn} />
           <Route path="forget-password" Component={ForgetPassword} />
+          <Route path="change-password" Component={ChangePassword} />
+          <Route path="verify-otp" Component={VerifyOTP} />
         </Route>
       </Routes>
     </BrowserRouter>

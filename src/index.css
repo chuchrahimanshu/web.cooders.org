@@ -14,6 +14,12 @@
   --color-primary-divider: #202020;
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #141414 inset; /* match your bg-secondary-overlay */
+  -webkit-text-fill-color: #ffffff; /* adjust as needed */
+  transition: background-color 9999s ease-in-out 0s;
+}
+
 .hide-scrollbar {
   overflow: auto;
   scrollbar-width: none;

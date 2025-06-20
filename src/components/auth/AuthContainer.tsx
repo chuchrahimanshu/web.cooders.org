@@ -6,7 +6,7 @@ const AuthContainer: React.FC<AuthContainerPropsInterface> = ({
   heading,
 }) => {
   return (
-    <section className="h-screen bg-primary-background text-primary-text relative">
+    <section className="h-screen bg-primary-background text-primary-text relative duration-300 ease-in-out">
       <DotGrid
         dotSize={7}
         gap={18}

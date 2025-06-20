@@ -13,3 +13,14 @@ interface ForgetPasswordFormDataInterface {
   email: string;
   otp: string;
 }
+
+interface ChangePasswordFormDataInterface {
+  email: string;
+  password: string;
+  confirmPassword: string;
+}
+
+interface VerifyOTPFormDataInterface {
+  email: string;
+  otp: string;
+}

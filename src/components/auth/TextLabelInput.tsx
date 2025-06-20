@@ -28,7 +28,7 @@ const TextLabelInput: React.FC<TextLabelInputPropsInterface> = ({
           name={name}
           value={value}
           onChange={handleInputChange}
-          className="w-full ease-in-out outline-none border-2 border-secondary-overlay bg-secondary-overlay p-2 focus:border-palette-yellow duration-300"
+          className="w-full outline-none border-2 border-secondary-overlay bg-secondary-overlay p-2 focus:border-palette-yellow duration-300 ease-in-out"
         />
         {attachedButton && (
           <div
