@@ -8,9 +8,6 @@ interface TextLabelInputPropsInterface {
   name: string;
   value: string | number | readonly string[] | undefined;
   handleInputChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  attachedButton?: boolean;
-  attachedButtonText?: string;
-  attachedButtonHandler?: () => void;
 }
 
 interface AuthContainerPropsInterface {

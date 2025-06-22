@@ -1,5 +1,5 @@
 import React from "react";
-import { DotGrid } from "../../elements";
+import DotGrid from "../global/DotGrid";
 
 const AuthContainer: React.FC<AuthContainerPropsInterface> = ({
   children,

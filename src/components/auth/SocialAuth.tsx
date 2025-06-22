@@ -3,18 +3,42 @@ import { FcGoogle } from "react-icons/fc";
 import GITHUB_LOGO from "../../assets/images/GITHUB.png";
 import LINKEDIN_LOGO from "../../assets/images/LINKEDIN.png";
 
+const socialButtons = [
+  {
+    id: "google",
+    icon: <FcGoogle size={26} />,
+    alt: "Sign in with Google",
+  },
+  {
+    id: "github",
+    icon: (
+      <img src={GITHUB_LOGO} alt="Sign in with GitHub" className="h-[28px]" />
+    ),
+  },
+  {
+    id: "linkedin",
+    icon: (
+      <img
+        src={LINKEDIN_LOGO}
+        alt="Sign in with LinkedIn"
+        className="h-[22px]"
+      />
+    ),
+  },
+];
+
 const SocialAuth: React.FC = () => {
   return (
     <div className="flex items-center justify-between w-full gap-2">
-      <div className="flex items-center gap-1 justify-center bg-secondary-overlay h-[43px] cursor-pointer w-full border-2 border-secondary-overlay hover:border-palette-yellow ease-in-out duration-300">
-        <FcGoogle size={26} />
-      </div>
-      <div className="flex items-center gap-1 justify-center bg-secondary-overlay h-[43px] cursor-pointer w-full border-2 border-secondary-overlay hover:border-palette-yellow ease-in-out duration-300">
-        <img src={GITHUB_LOGO} alt="GitHub Logo" className="h-[28px]" />
-      </div>
-      <div className="flex items-center gap-1 justify-center bg-secondary-overlay h-[43px] cursor-pointer w-full border-2 border-secondary-overlay hover:border-palette-yellow ease-in-out duration-300">
-        <img src={LINKEDIN_LOGO} alt="LinkedIn Logo" className="h-[22px]" />
-      </div>
+      {socialButtons.map(({ id, icon, alt }) => (
+        <div
+          key={id}
+          title={alt}
+          className="flex items-center justify-center gap-1 bg-secondary-overlay h-[43px] w-full cursor-pointer border-2 border-secondary-overlay hover:border-palette-yellow transition duration-300 ease-in-out"
+        >
+          {icon}
+        </div>
+      ))}
     </div>
   );
 };

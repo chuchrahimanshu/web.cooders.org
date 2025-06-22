@@ -1,15 +1,22 @@
+// GLOBAL SECTION
+import AnimatedButton from "./global/AnimatedButton";
+import DotGrid from "./global/DotGrid";
+import SplashCursor from "./global/SplashCursor";
+
+// AUTH SECTION
 import AuthContainer from "./auth/AuthContainer";
-import CheckboxInput from "./auth/CheckboxInput";
 import NavigationLabel from "./auth/NavigationLabel";
 import TextLabelInput from "./auth/TextLabelInput";
 import SocialAuth from "./auth/SocialAuth";
 import DividerWithText from "./auth/DividerWithText";
 
 export {
+  AnimatedButton,
+  DotGrid,
+  SplashCursor,
   AuthContainer,
-  TextLabelInput,
   NavigationLabel,
-  CheckboxInput,
+  TextLabelInput,
   SocialAuth,
   DividerWithText,
 };

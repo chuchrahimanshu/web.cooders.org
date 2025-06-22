@@ -1,5 +1,3 @@
-import AnimatedButton from "./AnimatedButton";
-import SplashCursor from "./SplashCursor";
-import DotGrid from "./DotGrid";
+import Logo from "./Logo";
 
-export { AnimatedButton, SplashCursor, DotGrid };
+export { Logo };
