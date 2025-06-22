@@ -2,19 +2,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-interface SidebarItemProps {
-  icon: React.ReactNode;
-  label: string;
-  path: string;
-}
-
-const SidebarItem: React.FC<SidebarItemProps> = ({ icon, label, path }) => {
+const SidebarItem: React.FC<SidebarItemPropsInterface> = ({
+  icon,
+  label,
+  path,
+}) => {
   return (
     <NavLink
       to={path}
       end
       className={({ isActive }) =>
-        `mb-1 flex items-center w-full h-[45px] font-medium rounded-[10px] cursor-pointer ease-in-out transition duration-300 px-2 ${
+        `mb-1 flex items-center w-full h-[44px] font-medium rounded-[10px] cursor-pointer ease-in-out transition duration-300 px-2 ${
           isActive
             ? "text-palette-sky bg-secondary-overlay"
             : "text-white/50 hover:text-palette-sky hover:bg-secondary-overlay"

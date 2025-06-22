@@ -7,8 +7,13 @@ import {
   CommunityChat,
   CommunityDiscussions,
   CommunityGroups,
+  CommunityOneToOne,
   CommunityProfile,
+  CommunityQNA,
+  CommunityResources,
   CommunitySettings,
+  CommunityShowcase,
+  CommunitySnippets,
   CommunityTrending,
   Dashboard,
   ForgetPassword,
@@ -34,6 +39,11 @@ const Router: React.FC = () => {
             <Route path="groups" Component={CommunityGroups} />
             <Route path="trending" Component={CommunityTrending} />
             <Route path="discussions" Component={CommunityDiscussions} />
+            <Route path="snippets" Component={CommunitySnippets} />
+            <Route path="qna" Component={CommunityQNA} />
+            <Route path="showcase" Component={CommunityShowcase} />
+            <Route path="resources" Component={CommunityResources} />
+            <Route path="one-to-one" Component={CommunityOneToOne} />
             <Route path="profile" Component={CommunityProfile} />
             <Route path="settings" Component={CommunitySettings} />
           </Route>

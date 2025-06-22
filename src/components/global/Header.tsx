@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Logo } from "../../elements";
-import AVATAR from "../../assets/images/AVATAR.jpeg";
+import { MdPerson } from "react-icons/md";
 
 // Define routes with path and label
 const navItems = [
@@ -33,11 +33,9 @@ const Header: React.FC = () => {
           </NavLink>
         ))}
       </nav>
-      <img
-        src={AVATAR}
-        alt="User Avatar"
-        className="h-10 w-10 rounded-full object-cover"
-      />
+      <div className="h-10 w-10 flex items-center justify-center rounded-full cursor-pointer bg-palette-sky/70 hover:bg-palette-sky ease-in-out transition duration-300">
+        <MdPerson size={26} className="-mt-[2px]" />
+      </div>
     </header>
   );
 };

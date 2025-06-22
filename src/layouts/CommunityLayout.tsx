@@ -7,6 +7,11 @@ import {
   MdSettings,
   MdTrendingUp,
   MdChat,
+  MdCode,
+  MdQuestionAnswer,
+  MdWeb,
+  MdNoteAdd,
+  MdPersonAdd,
 } from "react-icons/md";
 import { Outlet } from "react-router-dom";
 import { SidebarItem } from "../components";
@@ -26,6 +31,31 @@ const sidebarItems = [
     path: "/community/discussions",
   },
   {
+    icon: <MdCode size={25} />,
+    label: "Snippets",
+    path: "/community/snippets",
+  },
+  {
+    icon: <MdQuestionAnswer size={25} />,
+    label: "Why()",
+    path: "/community/qna",
+  },
+  {
+    icon: <MdWeb size={25} />,
+    label: "Showcase",
+    path: "/community/showcase",
+  },
+  {
+    icon: <MdNoteAdd size={25} />,
+    label: "Resources",
+    path: "/community/resources",
+  },
+  {
+    icon: <MdPersonAdd size={25} />,
+    label: "Join(1-1)",
+    path: "/community/one-to-one",
+  },
+  {
     icon: <MdPerson size={25} />,
     label: "Profile",
     path: "/community/profile",
@@ -40,11 +70,16 @@ const sidebarItems = [
 const CommunityLayout: React.FC = () => {
   return (
     <section className="flex w-full justify-between">
-      <aside className="w-[240px] bg-primary-overlay my-3 rounded-[10px] p-2">
-        {sidebarItems.map((item, index) => (
-          <SidebarItem key={index} {...item} />
-        ))}
-      </aside>
+      <section className="w-[240px]">
+        <aside className="w-full bg-primary-overlay mt-3 rounded-[10px] px-2 pt-2 pb-[4px] h-fit">
+          {sidebarItems.map((item, index) => (
+            <SidebarItem key={index} {...item} />
+          ))}
+        </aside>
+        <p className="w-full text-center mt-[10px] font-semibold text-white/50 hover:text-palette-yellow cursor-pointer duration-300 ease-in-out transition">
+          Crafted with ❤️ & ☕ in India
+        </p>
+      </section>
       <section className="my-3 p-2 flex-1">
         <Outlet />
       </section>

@@ -20,6 +20,11 @@ import CommunityGroups from "./community/CommunityGroups";
 import CommunityProfile from "./community/CommunityProfile";
 import CommunitySettings from "./community/CommunitySettings";
 import CommunityTrending from "./community/CommunityTrending";
+import CommunitySnippets from "./community/CommunitySnippets";
+import CommunityQNA from "./community/CommunityQNA";
+import CommunityShowcase from "./community/CommunityShowcase";
+import CommunityResources from "./community/CommunityResources";
+import CommunityOneToOne from "./community/CommunityOneToOne";
 
 export {
   Home,
@@ -39,4 +44,9 @@ export {
   CommunityProfile,
   CommunitySettings,
   CommunityTrending,
+  CommunitySnippets,
+  CommunityQNA,
+  CommunityShowcase,
+  CommunityResources,
+  CommunityOneToOne,
 };
