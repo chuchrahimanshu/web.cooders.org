@@ -1,10 +1,5 @@
 import React from "react";
 
-interface AuthFormButtonPropsInterface {
-  title: string;
-  buttonClickHandler?: () => void;
-}
-
 const AuthFormButton: React.FC<AuthFormButtonPropsInterface> = ({
   title,
   buttonClickHandler,

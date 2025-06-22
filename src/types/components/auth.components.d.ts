@@ -24,3 +24,8 @@ interface NavigationLabelPropsInterface {
 interface DividerWithTextPropsInterface {
   label?: string;
 }
+
+interface AuthFormButtonPropsInterface {
+  title: string;
+  buttonClickHandler?: () => void;
+}

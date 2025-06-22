@@ -2,6 +2,7 @@
 import AnimatedButton from "./global/AnimatedButton";
 import DotGrid from "./global/DotGrid";
 import SplashCursor from "./global/SplashCursor";
+import Header from "./global/Header";
 
 // AUTH SECTION
 import AuthContainer from "./auth/AuthContainer";
@@ -15,6 +16,7 @@ export {
   AnimatedButton,
   DotGrid,
   SplashCursor,
+  Header,
   AuthContainer,
   NavigationLabel,
   TextLabelInput,
