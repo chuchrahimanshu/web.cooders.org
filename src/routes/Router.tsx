@@ -1,9 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { GlobalLayout } from "../layouts";
+import { CommunityLayout, GlobalLayout } from "../layouts";
 import {
   ChangePassword,
   Community,
+  CommunityChat,
+  CommunityDiscussions,
+  CommunityGroups,
+  CommunityProfile,
+  CommunitySettings,
+  CommunityTrending,
   Dashboard,
   ForgetPassword,
   Home,
@@ -22,7 +28,15 @@ const Router: React.FC = () => {
         <Route path="/" Component={GlobalLayout}>
           <Route path="dashboard" Component={Dashboard} />
           <Route path="studio" Component={Studio} />
-          <Route path="community" Component={Community} />
+          <Route path="community" Component={CommunityLayout}>
+            <Route path="" Component={Community} />
+            <Route path="chats" Component={CommunityChat} />
+            <Route path="groups" Component={CommunityGroups} />
+            <Route path="trending" Component={CommunityTrending} />
+            <Route path="discussions" Component={CommunityDiscussions} />
+            <Route path="profile" Component={CommunityProfile} />
+            <Route path="settings" Component={CommunitySettings} />
+          </Route>
           <Route path="solvex" Component={SolveX} />
           <Route path="marketplace" Component={Marketplace} />
         </Route>

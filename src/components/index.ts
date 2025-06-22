@@ -3,6 +3,7 @@ import AnimatedButton from "./global/AnimatedButton";
 import DotGrid from "./global/DotGrid";
 import SplashCursor from "./global/SplashCursor";
 import Header from "./global/Header";
+import SidebarItem from "./global/SidebarItem";
 
 // AUTH SECTION
 import AuthContainer from "./auth/AuthContainer";
@@ -17,6 +18,7 @@ export {
   DotGrid,
   SplashCursor,
   Header,
+  SidebarItem,
   AuthContainer,
   NavigationLabel,
   TextLabelInput,

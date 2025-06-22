@@ -1,7 +1,6 @@
 // GLOBAL SECTION
 import Home from "./global/Home";
 import Dashboard from "./global/Dashboard";
-import Community from "./global/Community";
 import Studio from "./global/Studio";
 import SolveX from "./global/SolveX";
 import Marketplace from "./global/Marketplace";
@@ -13,10 +12,18 @@ import ForgetPassword from "./auth/ForgetPassword";
 import ChangePassword from "./auth/ChangePassword";
 import VerifyOTP from "./auth/VerifyOTP";
 
+// COMMUNITY SECTION
+import Community from "./community/Community";
+import CommunityChat from "./community/CommunityChat";
+import CommunityDiscussions from "./community/CommunityDiscussions";
+import CommunityGroups from "./community/CommunityGroups";
+import CommunityProfile from "./community/CommunityProfile";
+import CommunitySettings from "./community/CommunitySettings";
+import CommunityTrending from "./community/CommunityTrending";
+
 export {
   Home,
   Dashboard,
-  Community,
   Marketplace,
   SolveX,
   Studio,
@@ -25,4 +32,11 @@ export {
   ForgetPassword,
   ChangePassword,
   VerifyOTP,
+  Community,
+  CommunityChat,
+  CommunityDiscussions,
+  CommunityGroups,
+  CommunityProfile,
+  CommunitySettings,
+  CommunityTrending,
 };
