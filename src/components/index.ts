@@ -9,6 +9,7 @@ import NavigationLabel from "./auth/NavigationLabel";
 import TextLabelInput from "./auth/TextLabelInput";
 import SocialAuth from "./auth/SocialAuth";
 import DividerWithText from "./auth/DividerWithText";
+import AuthFormButton from "./auth/AuthFormButton";
 
 export {
   AnimatedButton,
@@ -19,4 +20,5 @@ export {
   TextLabelInput,
   SocialAuth,
   DividerWithText,
+  AuthFormButton,
 };

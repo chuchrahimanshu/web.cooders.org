@@ -29,12 +29,12 @@ const socialButtons = [
 
 const SocialAuth: React.FC = () => {
   return (
-    <div className="flex items-center justify-between w-full gap-2">
+    <div className="flex items-center justify-center w-full gap-10">
       {socialButtons.map(({ id, icon, alt }) => (
         <div
           key={id}
           title={alt}
-          className="flex items-center justify-center gap-1 bg-secondary-overlay h-[43px] w-full cursor-pointer border-2 border-secondary-overlay hover:border-palette-yellow transition duration-300 ease-in-out"
+          className="cursor-pointer transition duration-300 ease-in-out"
         >
           {icon}
         </div>

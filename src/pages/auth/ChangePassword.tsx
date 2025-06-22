@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { AuthContainer, TextLabelInput } from "../../components";
+import {
+  AuthContainer,
+  AuthFormButton,
+  TextLabelInput,
+} from "../../components";
 import {
   useLocation,
   useNavigate,
@@ -61,9 +65,7 @@ const ChangePassword: React.FC = () => {
         type="password"
         handleInputChange={handleInputChange}
       />
-      <div className="flex items-center justify-center bg-secondary-overlay h-[43px] cursor-pointer w-full border-2 border-secondary-overlay hover:border-palette-yellow ease-in-out duration-300">
-        <p className="font-medium">Submit</p>
-      </div>
+      <AuthFormButton title="Update Password" />
     </AuthContainer>
   );
 };

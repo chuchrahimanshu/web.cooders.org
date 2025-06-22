@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   AuthContainer,
+  AuthFormButton,
   NavigationLabel,
   TextLabelInput,
 } from "../../components";
@@ -50,12 +51,7 @@ const ForgetPassword: React.FC = () => {
         linkText="Sign In"
         handleNavigation={handleSignInNavigation}
       />
-      <div
-        className="flex items-center justify-center bg-secondary-overlay h-[43px] cursor-pointer w-full border-2 border-secondary-overlay hover:border-palette-yellow ease-in-out duration-300"
-        onClick={handleFormSubmit}
-      >
-        <p className="font-medium">Send OTP</p>
-      </div>
+      <AuthFormButton title="Send OTP" buttonClickHandler={handleFormSubmit} />
     </AuthContainer>
   );
 };
