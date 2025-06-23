@@ -34,7 +34,7 @@ const SocialAuth: React.FC = () => {
         <div
           key={id}
           title={alt}
-          className="cursor-pointer transition duration-300 ease-in-out"
+          className="cursor-pointer transition duration-200 ease-in-out"
         >
           {icon}
         </div>

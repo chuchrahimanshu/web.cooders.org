@@ -6,7 +6,7 @@ const AuthContainer: React.FC<AuthContainerPropsInterface> = ({
   heading,
 }) => {
   return (
-    <section className="h-screen bg-primary-background text-primary-text relative duration-300 ease-in-out">
+    <section className="h-screen bg-primary-background text-primary-text relative duration-200 ease-in-out">
       <DotGrid
         dotSize={7}
         gap={18}
@@ -23,7 +23,7 @@ const AuthContainer: React.FC<AuthContainerPropsInterface> = ({
         className="shadow-2xl p-8 bg-primary-overlay flex flex-col gap-[9px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] rounded-[10px]"
       >
         <div className="flex items-center justify-between">
-          <p className="text-3xl font-bold mb-[12px] hover:text-palette-yellow duration-300 ease-in-out inline-block">
+          <p className="text-3xl font-bold mb-[12px] hover:text-palette-yellow duration-200 ease-in-out inline-block">
             {heading}
           </p>
         </div>

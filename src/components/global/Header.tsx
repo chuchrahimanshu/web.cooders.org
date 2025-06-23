@@ -22,7 +22,7 @@ const Header: React.FC = () => {
             key={label}
             to={to}
             className={({ isActive }) =>
-              `text-[16px] font-semibold transition duration-300 ease-in-out cursor-pointer ${
+              `text-[16px] font-semibold transition duration-200 ease-in-out cursor-pointer ${
                 isActive
                   ? "text-palette-sky"
                   : "text-white/60 hover:text-palette-sky"
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
           </NavLink>
         ))}
       </nav>
-      <div className="h-10 w-10 flex items-center justify-center rounded-full cursor-pointer bg-palette-sky/70 hover:bg-palette-sky ease-in-out transition duration-300">
+      <div className="h-10 w-10 flex items-center justify-center rounded-full cursor-pointer bg-palette-sky/70 hover:bg-palette-sky ease-in-out transition duration-200">
         <MdPerson size={26} className="-mt-[2px]" />
       </div>
     </header>

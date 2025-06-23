@@ -75,7 +75,7 @@ const StudioLayout: React.FC = () => {
         </aside>
         <SidebarFooter />
       </section>
-      <section className="my-3 p-2 flex-1">
+      <section className="my-3 ml-3 flex-1">
         <Outlet />
       </section>
     </section>

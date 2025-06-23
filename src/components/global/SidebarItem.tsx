@@ -12,7 +12,7 @@ const SidebarItem: React.FC<SidebarItemPropsInterface> = ({
       to={path}
       end
       className={({ isActive }) =>
-        `mb-1 flex items-center w-full h-[44px] font-medium rounded-[10px] cursor-pointer ease-in-out transition duration-300 px-2 ${
+        `mb-1 flex items-center w-full h-[44px] font-medium rounded-[10px] cursor-pointer ease-in-out transition duration-200 px-2 ${
           isActive
             ? "text-palette-sky bg-secondary-overlay"
             : "text-white/50 hover:text-palette-sky hover:bg-secondary-overlay"

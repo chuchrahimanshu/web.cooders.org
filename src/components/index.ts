@@ -14,6 +14,9 @@ import SocialAuth from "./auth/SocialAuth";
 import DividerWithText from "./auth/DividerWithText";
 import AuthFormButton from "./auth/AuthFormButton";
 
+// STUDIO SECTION
+import StudioLayout from "./studio/StudioLayout";
+
 export {
   AnimatedButton,
   DotGrid,
@@ -27,4 +30,5 @@ export {
   SocialAuth,
   DividerWithText,
   AuthFormButton,
+  StudioLayout,
 };

@@ -19,3 +19,13 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #ffffff; /* adjust as needed */
   transition: background-color 9999s ease-in-out 0s;
 }
+
+.hide-scrollbar {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
