@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { CommunityLayout, GlobalLayout } from "../layouts";
+import { CommunityLayout, GlobalLayout, StudioLayout } from "../layouts";
 import {
   ChangePassword,
   Community,
@@ -23,6 +23,17 @@ import {
   SignUp,
   SolveX,
   Studio,
+  StudioAntDesign,
+  StudioBuilder,
+  StudioChakraUI,
+  StudioHeadlessUI,
+  StudioHeroUI,
+  StudioMaterialUI,
+  StudioPrimeReact,
+  StudioProfile,
+  StudioRadixUI,
+  StudioSettings,
+  StudioShadCN,
   VerifyOTP,
 } from "../pages";
 
@@ -32,7 +43,20 @@ const Router: React.FC = () => {
       <Routes>
         <Route path="/" Component={GlobalLayout}>
           <Route path="dashboard" Component={Dashboard} />
-          <Route path="studio" Component={Studio} />
+          <Route path="studio" Component={StudioLayout}>
+            <Route path="" Component={Studio} />
+            <Route path="builder" Component={StudioBuilder} />
+            <Route path="material-ui" Component={StudioMaterialUI} />
+            <Route path="shadcn" Component={StudioShadCN} />
+            <Route path="prime-react" Component={StudioPrimeReact} />
+            <Route path="ant-design" Component={StudioAntDesign} />
+            <Route path="chakra-ui" Component={StudioChakraUI} />
+            <Route path="radix-ui" Component={StudioRadixUI} />
+            <Route path="headless-ui" Component={StudioHeadlessUI} />
+            <Route path="hero-ui" Component={StudioHeroUI} />
+            <Route path="profile" Component={StudioProfile} />
+            <Route path="settings" Component={StudioSettings} />
+          </Route>
           <Route path="community" Component={CommunityLayout}>
             <Route path="" Component={Community} />
             <Route path="chats" Component={CommunityChat} />

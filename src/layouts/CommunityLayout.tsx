@@ -14,7 +14,7 @@ import {
   MdPersonAdd,
 } from "react-icons/md";
 import { Outlet } from "react-router-dom";
-import { SidebarItem } from "../components";
+import { SidebarFooter, SidebarItem } from "../components";
 
 const sidebarItems = [
   { icon: <MdHome size={25} />, label: "Home", path: "/community" },
@@ -72,13 +72,13 @@ const CommunityLayout: React.FC = () => {
     <section className="flex w-full justify-between">
       <section className="w-[240px]">
         <aside className="w-full bg-primary-overlay mt-3 rounded-[10px] px-2 pt-2 pb-[4px] h-fit">
-          {sidebarItems.map((item, index) => (
-            <SidebarItem key={index} {...item} />
-          ))}
+          {sidebarItems &&
+            sidebarItems.length > 0 &&
+            sidebarItems.map((item, index) => (
+              <SidebarItem key={index} {...item} />
+            ))}
         </aside>
-        <p className="w-full text-center mt-[10px] font-semibold text-white/50 hover:text-palette-yellow cursor-pointer duration-300 ease-in-out transition">
-          Crafted with ❤️ & ☕ in India
-        </p>
+        <SidebarFooter />
       </section>
       <section className="my-3 p-2 flex-1">
         <Outlet />

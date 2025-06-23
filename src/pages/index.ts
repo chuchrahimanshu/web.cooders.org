@@ -1,7 +1,6 @@
 // GLOBAL SECTION
 import Home from "./global/Home";
 import Dashboard from "./global/Dashboard";
-import Studio from "./global/Studio";
 import SolveX from "./global/SolveX";
 import Marketplace from "./global/Marketplace";
 
@@ -26,12 +25,25 @@ import CommunityShowcase from "./community/CommunityShowcase";
 import CommunityResources from "./community/CommunityResources";
 import CommunityOneToOne from "./community/CommunityOneToOne";
 
+// STUDIO SECTION
+import Studio from "./studio/Studio";
+import StudioBuilder from "./studio/StudioBuilder";
+import StudioMaterialUI from "./studio/StudioMaterialUI";
+import StudioShadCN from "./studio/StudioShadCN";
+import StudioPrimeReact from "./studio/StudioPrimeReact";
+import StudioProfile from "./studio/StudioProfile";
+import StudioSettings from "./studio/StudioSettings";
+import StudioAntDesign from "./studio/StudioAntDesign";
+import StudioChakraUI from "./studio/StudioChakraUI";
+import StudioRadixUI from "./studio/StudioRadixUI";
+import StudioHeadlessUI from "./studio/StudioHeadlessUI";
+import StudioHeroUI from "./studio/StudioHeroUI";
+
 export {
   Home,
   Dashboard,
   Marketplace,
   SolveX,
-  Studio,
   SignUp,
   SignIn,
   ForgetPassword,
@@ -49,4 +61,16 @@ export {
   CommunityShowcase,
   CommunityResources,
   CommunityOneToOne,
+  Studio,
+  StudioBuilder,
+  StudioMaterialUI,
+  StudioPrimeReact,
+  StudioProfile,
+  StudioSettings,
+  StudioShadCN,
+  StudioAntDesign,
+  StudioChakraUI,
+  StudioHeadlessUI,
+  StudioHeroUI,
+  StudioRadixUI,
 };
