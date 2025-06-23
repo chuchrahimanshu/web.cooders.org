@@ -33,7 +33,7 @@ const Header: React.FC = () => {
           </NavLink>
         ))}
       </nav>
-      <div className="h-10 w-10 flex items-center justify-center rounded-full cursor-pointer bg-palette-sky/70 hover:bg-palette-sky ease-in-out transition duration-200">
+      <div className="h-10 min-w-10 flex items-center justify-center rounded-full cursor-pointer bg-palette-sky/70 hover:bg-palette-sky ease-in-out transition duration-200">
         <MdPerson size={26} className="-mt-[2px]" />
       </div>
     </header>
