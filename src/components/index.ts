@@ -16,6 +16,7 @@ import AuthFormButton from "./auth/AuthFormButton";
 
 // STUDIO SECTION
 import StudioLayout from "./studio/StudioLayout";
+import StudioLayoutOnlyItems from "./studio/StudioLayoutOnlyItems";
 
 export {
   AnimatedButton,
@@ -31,4 +32,5 @@ export {
   DividerWithText,
   AuthFormButton,
   StudioLayout,
+  StudioLayoutOnlyItems,
 };
