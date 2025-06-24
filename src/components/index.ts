@@ -18,6 +18,10 @@ import AuthFormButton from "./auth/AuthFormButton";
 import StudioLayout from "./studio/StudioLayout";
 import StudioLayoutOnlyItems from "./studio/StudioLayoutOnlyItems";
 
+// COMMUNITY SECTION
+import Suggestions from "./community/Suggestions";
+import FollowRequests from "./community/FollowRequests";
+
 export {
   AnimatedButton,
   DotGrid,
@@ -33,4 +37,6 @@ export {
   AuthFormButton,
   StudioLayout,
   StudioLayoutOnlyItems,
+  Suggestions,
+  FollowRequests
 };

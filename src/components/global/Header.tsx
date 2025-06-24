@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { Logo } from "../../elements";
 import { MdPerson } from "react-icons/md";
 
-// Define routes with path and label
 const navItems = [
   { label: "DASHBOARD", to: "/dashboard" },
   { label: "STUDIO", to: "/studio" },
