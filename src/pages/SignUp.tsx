@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AUTH_DATA } from "../../data";
+import { AUTH_DATA } from "../data";
 import {
   AuthContainer,
   AuthFormButton,
@@ -7,7 +7,7 @@ import {
   NavigationLabel,
   SocialAuth,
   TextLabelInput,
-} from "../../components";
+} from "../components";
 import { useNavigate, type NavigateFunction } from "react-router-dom";
 
 const SignUp: React.FC = () => {
@@ -65,10 +65,7 @@ const SignUp: React.FC = () => {
         handleNavigation={handleSignInNavigation}
       />
       <div className="flex items-center justify-between w-full gap-2">
-        <AuthFormButton
-          title="Skip"
-          buttonClickHandler={() => navigate("/dashboard")}
-        />
+        <AuthFormButton title="Skip" buttonClickHandler={() => navigate("/")} />
         <AuthFormButton title="Sign Up" />
       </div>
       <DividerWithText />

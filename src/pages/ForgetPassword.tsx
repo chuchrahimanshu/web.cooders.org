@@ -4,9 +4,9 @@ import {
   AuthFormButton,
   NavigationLabel,
   TextLabelInput,
-} from "../../components";
+} from "../components";
 import { useNavigate, type NavigateFunction } from "react-router-dom";
-import { AUTH_DATA } from "../../data";
+import { AUTH_DATA } from "../data";
 
 const ForgetPassword: React.FC = () => {
   const navigate: NavigateFunction = useNavigate();

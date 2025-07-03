@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from "react";
-import {
-  AuthContainer,
-  AuthFormButton,
-  TextLabelInput,
-} from "../../components";
+import { AuthContainer, AuthFormButton, TextLabelInput } from "../components";
 import {
   useLocation,
   useNavigate,
   type Location,
   type NavigateFunction,
 } from "react-router-dom";
-import { AUTH_DATA } from "../../data";
+import { AUTH_DATA } from "../data";
 
 const ChangePassword: React.FC = () => {
   const location: Location = useLocation();

@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, type NavigateFunction } from "react-router-dom";
-import { AUTH_DATA } from "../../data";
-import {
-  AuthContainer,
-  AuthFormButton,
-  TextLabelInput,
-} from "../../components";
+import { AUTH_DATA } from "../data";
+import { AuthContainer, AuthFormButton, TextLabelInput } from "../components";
 
 const VerifyOTP: React.FC = () => {
   const navigate: NavigateFunction = useNavigate();

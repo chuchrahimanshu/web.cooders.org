@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimatedButton, SplashCursor } from "../../components";
+import { AnimatedButton, SplashCursor } from "../components";
 import { useNavigate, type NavigateFunction } from "react-router-dom";
 
 const Home: React.FC = () => {
